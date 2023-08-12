@@ -34,7 +34,7 @@ describe('CaixaDaLanchonete', () => {
     ])('compra de múltiplas quantidades em %p deve resultar em %p', validaTeste);
 
     test.each([
-        ['com quantidade zero', 'dinheiro', 'Quantidade inválida!', ['cafe,0']],
+        ['com quantidade zero', 'dinheiro', 'Quantidade Inválida!', ['cafe,0']],
         ['com um valor', 'credito', 'Item inválido!', ['1']],
         ['com código inexistente', 'debito', 'Item inválido!', ['pizza, 1']],
         ['com forma de pagamento inválida', 'especie', 'Forma de pagamento inválida!', ['cafe, 1']],

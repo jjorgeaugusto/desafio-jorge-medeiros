@@ -33,7 +33,7 @@ class CaixaDaLanchonete {
       }
 
       if (!quantidade || quantidade.trim() === '' || quantidade === '0' || parseInt(quantidade) <= 0) {
-        return 'Quantidade inválida!'
+        return 'Quantidade Inválida!'
       }
       
       valorTotal += this.cardapio[codigo].valor * parseInt(quantidade);
